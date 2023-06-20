@@ -6,3 +6,5 @@
      while read snapname revision; do
          snap remove "$snapname" --revision="$revision"
      done
+#Set number of snap revisions
+snap set system refresh.retain=2
